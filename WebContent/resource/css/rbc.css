@@ -1,0 +1,63 @@
+/* CSS Document */
+html,body,ul,li,p,pre{list-style: none;pading:0px;margin:0px;}
+html,body,.rbc{width:100%;height:100%;}
+
+.rbc .left{width:100%;height:50px;padding-top:12px;background-color:#4fa0ea;margin:0 auto;z-index:1000;}
+.rbc .left a{width:4%;height:36px;line-height:36px;text-align:center;
+	font-size:16px;display:block;float:left;text-decoration: none;position:relative;z-index:1000;
+	background:url(../image/block.png) no-repeat;background-size:100% 100%;}
+
+.rbc .left a:hover,.rbc .left a.curr{background:url(../image/block_curr.png) no-repeat;background-size:100% 100%;color:#467fdc;}
+.rbc .left a:hover{cursor:pointer;} 
+.rbc .left a.btn{width:5%;font-size:16px;}
+.rbc .left a.page{width:5%;}
+.rbc .left a.end{margin-right:0px;}
+.rbc .left a i{display:block;width:100%;height:15px;position:absolute;left:0;top:37px;z-index:10001;
+		background:url(../image/arrow.png) center no-repeat;cursor:default;}
+
+.rbc .right{clear:both;width:100%;height:90%;border:2px solid #ededed;margin:0 auto; z-index:-1;}
+
+.rbc .title{clear:both;width:99%;height:5%;padding-top:1%;background:url(../image/dotted.jpg) 20px 10px repeat-x;}
+.rbc .title p{width:100%;background:url(../image/rbc_icon_01.jpg) 20px 4px no-repeat;
+			line-height:30px;padding-left:40px;font-size:22px;font-weight:bold;color:#1d2935;}
+.rbc .content{clear:both;width:98%;height:28%;padding-left:2%;font-size:16px;line-height:24px;overflow:auto;
+			word-wrap: break-word;word-break:break-all;white-space:pre-wrap;}
+.rbc .info{width:98%;padding-left:2%;height:13%;}
+.rbc .info span{display:block;float:left;height:26px;line-height:26px;padding-right:50px;font-size:16px;text-align:left;white-space:nowrap; }
+.rbc .info span.hash{clear:both;float:none;}
+
+.rbc .foot{padding:0px;height:40px;margin-top:5px;border:0;background-color:#ccc;overflow:hidden;}
+.rbc .foot span{width:48%;height:100%;line-height:40px;display:block;float:left;padding-left:2%;font-size:16px;text-align:left;white-space:nowrap; }
+.rbc .foot a{width:47%;height:100%;line-height:40px;padding-left:2%;font-size:16px;display:block;float:right;text-align:left;}
+.rbc .foot i{width:2px;height:100%;background-color:#fff;display:block;float:left;}
+
+.cls-data-table{/*数据自动列表报表数据表格的样式*/
+    BORDER-COLLAPSE:   collapse;
+    border:1px solid #999;
+    color:#434547;
+    margin-top:2px;
+}
+.cls-data-tr-head-list {/*数据自动列表报表数据标题行<tr/>的样式*/
+    min-height:24px;height:24px;
+ }
+.cls-data-th-list {/*数据自动列表报表数据标题行每个<td/>的样式#3AA8F3/#64A5F8*/
+    background-color: #99CCFF;
+    /* BACKGROUND-IMAGE: url(images/datatitle_bg.gif);  */
+    text-align: center; 
+    vertical-align:middle;
+    border:1px solid #999;
+    font-weight:bold;
+    line-height: 30px;
+ }
+.cls-data-td-list{/*数据自动列表报表数据行每个<td/>的样式*/
+    border:1px solid #999; 
+    min-height:23px;height:23px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.cls-data-content-list{/*如果cellresize配置为1或者显示了垂直滚动条，则会将单元格内容自动包在一个<div/>中，下面就是设置这个div的样式*/
+    /*white-space:nowrap;*/
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:100%  
+}
